@@ -1,28 +1,17 @@
-import React, { useEffect, useState, } from 'react';
+import React, { useState, } from 'react';
 
 
 const FetchPokemon = () => {
 
-    const getNewPokemon = () => { 
-        let newPokemon = Math.floor(Math.random() * 151 + 1)
-        return(newPokemon);
-    }
-    const pokemonID = getNewPokemon();
-    const [pokemon, setPokemon] = useState([]);
-    //const [loading, setLoading] = useState(false);
+    const [pokemon, setPokemon] = useState();
 
     const getPokemon = async () => {
-        //setLoading(true);
-        const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonID}/`);
+        let newPokemon = Math.floor(Math.random() * 151 + 1)
+        const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${newPokemon}/`);
         const data = await response.json();
         setPokemon(data.name);
-        //setLoading(false);
         console.log(data.name);
     }
-
-    useEffect(() => {
-        getPokemon();
-      })
 
 return(
     <div className="container">
@@ -32,9 +21,7 @@ return(
         </div>
         <div className="main">
             <h1>{pokemon}</h1>
-            <h3 className="instructions">re-load the page for a new pokemon</h3>
-            <button type="button" onClick={getNewPokemon()}><h4>This button doesn't work yet</h4></button>
-            
+            <button type="button" onClick={getPokemon}><h4>New Pokemon</h4></button>    
         </div>
         <div className="header-footer">
             <h3>151 pokemon</h3>
