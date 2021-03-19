@@ -2,17 +2,39 @@
 
 .App {
   text-align: center;
-  padding:30vh;
   box-sizing:border-box;
   margin:0;
-  height:100vh;
   font-family: 'Oswald', sans-serif;
+  display:flex;
+  background-color:rgb(63, 63, 63);
+  height:100vh;
+}
+
+.container {
+  background-color:white;
+  border-radius:20px;
+  margin:2rem;
+  width:100vw;
 }
 
 h1 {
+  padding-top:30vh;
   font-size: 6rem;
   margin:0;
   text-transform: uppercase;
+  color: rgb(63, 63, 63);
+}
+
+h3 {
+  text-align:left;
+  font-family: 'helvetica', 'sans-serif';
+  font-weight:lighter;
+  color: rgb(63, 63, 63);
+}
+
+.main {
+  height:80vh;
+  margin:auto;
 }
 
 button {
@@ -22,4 +44,15 @@ button {
   border-radius:10px;
   color:white;
   font-family: 'helvetica', sans-serif;
+}
+
+.header-footer {
+  display:flex;
+  padding: 0 1rem 0 1rem;
+  justify-content:space-between;
+}
+
+.instructions {
+  text-align:center;
+  font-weight:500;
 }
