@@ -30,8 +30,7 @@ return(
         </div>
         <div className="main">
             <div className="name">
-                {loading ? <h3>Loading...</h3> : <h1>{pokemon}</h1>}
-            
+                {loading ? <h3 className="loading">Loading...</h3> : <h1>{pokemon}</h1>}
             <button type="button" onClick={getPokemon}><h4>New Pokemon</h4></button> 
             </div>
             <div className="image">
