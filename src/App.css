@@ -57,3 +57,19 @@ button {
   font-weight:500;
   font-family: "helvetica", sans-serif;
 }
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    h3 {
+      font-size:1rem;
+    }
+
+    h1 {
+      font-size:3rem;
+    }
+    .main {
+      height: 73vh;
+    }
+}
