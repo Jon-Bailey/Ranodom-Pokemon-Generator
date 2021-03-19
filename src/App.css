@@ -33,9 +33,19 @@ h3 {
 }
 
 .main {
+  display:flex;
   height: 80vh;
-  margin: auto;
+  align-items:center;
+  justify-content:center;
   
+}
+
+.name {
+
+}
+
+.image {
+
 }
 
 .header-footer {
