@@ -25,12 +25,12 @@ const FetchPokemon = () => {
 return(
     <div className="container">
         <div className="header-footer">
-            <h3>Pokemon Name Generator</h3>
+            <h3>Random Pokemon Generator</h3>
             <h3>Gotta Draw 'em all</h3>
         </div>
         <div className="main">
             <div className="name">
-                {loading ? <h3 className="loading">Loading...</h3> : <h1>{pokemon}</h1>}
+                {loading ? <h3 className="loader">Loading...</h3> : <h1>{pokemon}</h1>}
             <button type="button" onClick={getPokemon}><h4>New Pokemon</h4></button> 
             </div>
             <div className="image">
