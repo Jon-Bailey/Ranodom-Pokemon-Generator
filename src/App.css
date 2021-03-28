@@ -6,13 +6,14 @@
   margin: 0;
   font-family: "Oswald", sans-serif;
   display: flex;
-  background-color: rgb(63, 63, 63);
+  background-color: rgb(255, 255, 255);
   height: 100vh;
 }
 
 .container {
   background-color: white;
   border-radius: 20px;
+  border: 6px double black;
   margin: 2rem;
   width: 100vw;
 }
@@ -77,8 +78,10 @@ h4 {
   .main {
     height: 70vh;
   }
+  .container {
+    margin: 1rem;
+  }
 }
-
 
 .loader,
 .loader:after {

@@ -1,5 +1,5 @@
 import './App.css';
-import FetchPokemon from './components/FetchRandomPokemon'
+import FetchPokemon from './components/FetchRandomPokemon';
 
 function App() {
 

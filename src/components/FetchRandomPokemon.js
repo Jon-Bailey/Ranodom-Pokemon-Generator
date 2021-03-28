@@ -22,26 +22,26 @@ const FetchPokemon = () => {
         console.log(data.name);
     }
 
-return(
-    <div className="container">
-        <div className="header-footer">
-            <h3>Random Pokemon Generator</h3>
-            <h3>Gotta Draw 'em all</h3>
-        </div>
-        <div className="main">
-            <div className="name">
-                {loading ? <h3 className="loader">Loading...</h3> : <h1>{pokemon}</h1>}
-            <button type="button" onClick={getPokemon}><h4>New Pokemon</h4></button> 
+    return(
+        <div className="container">
+            <div className="header-footer">
+                <h3>Random Pokemon Generator</h3>
+                <h3>Gotta Draw 'em all</h3>
             </div>
-            <div className="image">
-                
+            <div className="main">
+                <div className="name">
+                    {loading ? <h3 className="loader">Loading...</h3> : <h1>{pokemon}</h1>}
+                <button type="button" onClick={getPokemon}><h4>New Pokemon</h4></button> 
+                </div>
+                <div className="image">
+                    
+                </div>
+            </div>
+            <div className="header-footer">
+                <h3>Generations 1 - 4</h3>
+                <h3>work in progress...</h3>
             </div>
         </div>
-        <div className="header-footer">
-            <h3>Generations 1 - 4</h3>
-            <h3>work in progress...</h3>
-        </div>
-    </div>
     )}
     
 export default FetchPokemon;
