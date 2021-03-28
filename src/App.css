@@ -16,6 +16,9 @@
   border: 6px double black;
   margin: 2rem;
   width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 h1 {
@@ -34,7 +37,7 @@ h3 {
 
 .main {
   display: flex;
-  height: 85%;
+  height: auto;
   align-items: center;
   justify-content: center;
 }
@@ -74,9 +77,6 @@ h4 {
 
   h1 {
     font-size: 3rem;
-  }
-  .main {
-    height: 70vh;
   }
   .container {
     margin: 1rem;
