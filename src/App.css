@@ -37,16 +37,26 @@ h3 {
 
 .main {
   display: flex;
-  height: auto;
+  flex-direction:column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .name {
   margin: auto;
+  height:40vh;
 }
 
-.image {
+.hidden {
+  display:none;
+}
+
+.show {
+  display:block;
+}
+
+#sprite {
+  height:300px;
 }
 
 .header-footer {
@@ -123,4 +133,12 @@ h4 {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
+}
+
+.image {
+  display:none;
+}
+
+.image-show {
+  display:block;
 }
